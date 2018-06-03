@@ -1,0 +1,17 @@
+.skills {
+    &__list {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    &__skill {
+        display: block;
+        width: 25%;
+    }
+    &__icon {
+        font-size: 9rem;
+    }
+    &__image {
+        width: 90px;
+        height: 90px;
+    }
+}

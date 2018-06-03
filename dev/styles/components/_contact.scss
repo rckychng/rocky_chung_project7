@@ -1,0 +1,28 @@
+.contact {
+    &__container {
+        display: flex;
+    }
+    &__text {
+        width: 50%;
+        text-align: right;
+        padding-right: 75px;
+    }
+    &__form {
+        width: 50%;
+    }
+    &__input {
+        width: 100%;
+        display: block;
+        border: 0;
+        border-bottom: 1.5px solid $darkgrey;
+        margin-bottom: 15px;
+    }
+    &__message {
+        resize: none;
+    }
+    &__submit {
+        border: 0;
+        padding: 0;
+        background-color: transparent;
+    }
+}

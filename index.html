@@ -2,12 +2,260 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>jQuery Sass Boilerplate</title>
+	<title>rckychng</title>
+	<link href="https://fonts.googleapis.com/css?family=Unica+One|Varela+Round" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<link rel="stylesheet" type="text/css" href="/public/styles/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<div>Hello</div>
+	<!-- HEADER STARTS -->
+	<header class="header">
+		<div class="header__logo">
+			<div class="header__logo--row">
+				<p class="header__name">R</p>
+				<p class="header__name">C</p>
+			</div>
+			<div class="header__logo--row">
+				<p class="header__name">K</p>
+				<p class="header__name">Y</p>
+			</div>
+		</div>
+		<div class="header__icon">
+			<i class="fas fa-bars"></i>
+		</div>
+		<nav class="header__nav" id="header__nav">
+			<div class="wrapper">
+				<ul class="header__links">
+					<li class="header__link"><a class="header__link-text" href="#">about</a></li>
+					<li class="header__link"><a class="header__link-text" href="#">skills</a></li>
+					<li class="header__link"><a class="header__link-text" href="#">work</a></li>
+					<li class="header__link"><a class="header__link-text" href="#">contact</a></li>
+				</ul>	
+			</div>
+		</nav>
+		<div class="wrapper">
+			<div class="header__text">
+				<h1 class="header__title">Rocky Chung</h1>
+				<h2 class="header__subtitle">Web Developer</h2>
+			</div>
+		</div>
+	</header>
+	<!-- HEADER ENDS -->
+
+	<!-- MAIN STARTS -->
+	<main>
+		<!-- ABOUT STARTS -->
+		<section class="about">
+			<div class="wrapper">
+				<h2>About</h2>
+				<div>
+					<img src="assets/about_01.jpg" alt="Profile Picture">
+				</div>
+				<div class="about__text">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, ea tempore? Blanditiis corporis exercitationem praesentium qui asperiores? Quam, distinctio eos sapiente omnis libero nulla maxime numquam officiis natus voluptas rem dolorem totam rerum placeat, odio beatae adipisci error minima cum amet ex corrupti ab saepe? Magnam sapiente temporibus architecto molestias sint aliquid in tempore, beatae fugiat necessitatibus delectus provident nesciunt exercitationem minus hic doloribus deleniti! Alias eveniet quibusdam laborum repudiandae doloremque tempora nihil magnam cumque voluptas voluptates sunt nemo exercitationem molestias deserunt mollitia natus voluptatibus, odio doloribus. Asperiores, ipsa veritatis. Ea ipsa veniam excepturi mollitia in corporis minus exercitationem rem.</p>
+				</div>
+			</div>
+		</section>
+		<!-- ABOUT STARTS -->
+
+		<!-- SKILLS STARTS -->
+		<section class="skills">
+			<div class="wrapper">
+				<h2>Skills</h2>
+				<ul class="skills__list">
+					<li class="skills__skill">
+						<i class="skills__icon devicon-html5-plain"></i>
+						<p>HTML</p>
+					</li>
+					<li class="skills__skill">
+						<i class="skills__icon devicon-css3-plain"></i>
+						<p>CSS</p>
+					</li>
+					<li class="skills__skill">
+						<i class="skills__icon devicon-javascript-plain"></i>
+						<p>Javascript</p>
+					</li>
+					<li class="skills__skill">
+						<i class="skills__icon devicon-jquery-plain"></i>
+						<p>jQuery</p>
+					</li>
+					<li class="skills__skill">
+						<i class="skills__icon devicon-react-original"></i>
+						<p>React</p>
+					</li>
+					<li class="skills__skill">
+						<i class="skills__icon devicon-sass-original"></i>
+						<p>Sass</p>
+					</li>
+					<li class="skills__skill">
+						<i class="skills__icon devicon-gulp-plain"></i>
+						<p>Gulp</p>
+					</li>
+					<li class="skills__skill">
+						<i class="skills__icon devicon-github-plain"></i>
+						<p>github</p>
+					</li>
+					<li class="skills__skill">
+						<img class="skills__image" src="assets/skills_01-firebase.svg" alt="Firebase logo">
+						<p>Firebase</p>
+					</li>
+					<li class="skills__skill">
+						<img class="skills__image" src="assets/skills_02-photoshop.svg" alt="Photoshop icon">
+						<p>Photoshop</p>
+					</li>
+					<li class="skills__skill">
+						<img class="skills__image" src="assets/skills_03-illustrator.svg" alt="Illustrator icon">
+						<p>Illustrator</p>
+					</li>
+					<li class="skills__skill">
+						<img class="skills__image" src="assets/skills_04-indesign.svg" alt="Indesign icon">
+						<p>Indesign</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- SKILLS ENDS -->
+
+		<!-- WORK STARTS -->
+		<section class="work">
+			<div class="wrapper">
+				<h2>Work</h2>
+				<div class="work__project">
+					<h3 class="work__title">Danny Pack</h3>
+					<div class="work__container">
+						<div class="work__preview">
+							<img class="work__image" src="assets/work_01.jpg" alt="Danny Pack">
+							<div class="work__links">
+								<a class="work__link" href="#">Live</a>
+								<a class="work__link" href="#">GitHub</a>
+							</div>
+						</div>
+						<div class="work__details">
+							<ul class="work__skills">
+								<li class="work__skill">HTML5</li>
+								<li class="work__skill">Sass</li>
+								<li class="work__skill">Javascript</li>
+								<li class="work__skill">jQuery</li>
+								<li class="work__skill">Responsive</li>
+							</ul>
+							<p class="work__text">A Pokemon inspired game where you play as one of HackerYou's instructors, Danny, and take on wild CSS in order to collect them and add them to Danny's fanny pack. The game was based on an inside joke we had going on during my cohort.</p>
+						</div>
+					</div>
+				</div>
+				<div class="work__project">
+					<h3 class="work__title">REACT Paint</h3>
+					<div class="work__container">
+						<div class="work__preview">
+							<img class="work__image" src="assets/work_02.jpg" alt="REACT Paint">
+							<div class="work__links">
+								<a class="work__link" href="#">Live</a>
+								<a class="work__link" href="#">GitHub</a>
+							</div>
+						</div>
+						<div class="work__details">
+							<ul class="work__skills">
+								<li class="work__skill">React</li>
+								<li class="work__skill">Sass</li>
+								<li class="work__skill">Firebase</li>
+								<li class="work__skill">Responsive</li>
+							</ul>
+							<p class="work__text">A paint app built in React where users can draw on the canvas, change the colour of the brush and adjust the size of the brush. Users are also able to undo and redo any changes that they have made to the canvas. The app is also integrated with Firebase Realtime Database which allows the user to save their drawings as well as load it back onto the canvas at a later time to continue working on it.</p>
+						</div>
+					</div>
+				</div>
+				<div class="work__project">
+					<h3 class="work__title">Get Lit!</h3>
+					<div class="work__container">
+						<div class="work__preview">
+							<img class="work__image" src="assets/work_03.jpg" alt="Get Lit!">
+							<div class="work__links">
+								<a class="work__link" href="#">Live</a>
+								<a class="work__link" href="#">GitHub</a>
+							</div>
+						</div>
+						<div class="work__details">
+							<ul class="work__skills">
+								<li class="work__skill">React</li>
+								<li class="work__skill">React Router</li>
+								<li class="work__skill">Sass</li>
+								<li class="work__skill">API</li>
+								<li class="work__skill">Firebase</li>
+								<li class="work__skill">Responsive</li>
+							</ul>
+							<p class="work__text">An app that help users decide on what book to read next using the Good Reads API. Users are able to search for books by genre and the results that come back are the most popular books in that specific genre. When a user selects a book a more detailed look of the book is diplayed that includes: the title, author, description, rating, number of pages, books similar to the selected book and a link to the Good Reads page of the selected book. The app is also integrated with Firebase Realtime Database and Authentication which allows users to save their favourite books to the database as well as delete it and check off that the book is currently being read or if the user has finshed reading the book.</p>
+						</div>
+					</div>
+				</div>
+			</div><!-- END OF WRAPPER -->
+		</section>
+		<!-- WORK ENDS -->
+
+		<!-- CONTACT STARTS -->
+		<section class="contact">
+			<div class="wrapper">
+				<h2>Contact</h2>
+				<div class="contact__container">
+					<div class="contact__text">
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt harum similique, aperiam sed voluptatibus in tempore magni dolores blanditiis sint culpa voluptate quos placeat animi, officiis et. Ex aperiam ab ad esse dolores rerum voluptatum, molestiae voluptates, unde quia eius! Unde tempore sed ad sunt ullam exercitationem eveniet odio vitae.</p>
+					</div>
+					<form action="" class="contact__form">
+						<label class="contact__label" for="contact__name">Name</label>
+						<input type="text" class="contact__input contact__name" name="contact__name" id="contact__name" required="true">
+		
+						<label class="contact__label" for="contact__email">Email</label>
+						<input type="email" class="contact__input contact__email" name="contact__email" id="contact__email" required="true">
+		
+						<label class="contact__label" for="contact__message">Message</label>
+						<textarea class="contact__input contact__message" name="contact__message" id="contact__message" rows="5" cols="20"></textarea>
+		
+						<label class="contact__submit visuallyhidden" for="contact__submit">Send</label>
+						<button type="submit" class="contact__submit" id="contact__submit">Send</button>
+					</form>
+				</div>
+			</div>
+		</section>
+		<!-- CONTACT ENDS -->
+	</main>
+	<!-- MAIN ENDS -->
+	
+	<!-- FOOTER STARTS -->
+	<footer class="footer">
+		<div class="footer__container">
+			<div class="footer__logo">
+				<div class="footer__logo--row">
+					<p class="footer__name">R</p>
+					<p class="footer__name">C</p>
+				</div>
+				<div class="footer__logo--row">
+					<p class="footer__name">K</p>
+					<p class="footer__name">Y</p>
+				</div>
+			</div>
+			<div class="footer__social">
+				<ul class="footer__links">
+					<li class="footer__link">
+						<a href="#"><i class="footer__icon fab fa-linkedin-in"></i></a>
+					</li>
+					<li class="footer__link">
+						<a href="#"><i class="footer__icon fab fa-github"></i></a>
+					</li>
+					<li class="footer__link">
+						<a href="#"><i class="footer__icon fab fa-twitter"></i></a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__copyright">
+				<p class="footer__copy">&copy; Rocky Chung 2018</p>
+			</div>
+		</div>
+	</footer>
+	<!-- FOOTER ENDS -->
+
+	<!-- SCRIPTS STARTS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="/public/scripts/main.js"></script>
+	<!-- SCRIPTS ENDS -->
 </body>
 </html>

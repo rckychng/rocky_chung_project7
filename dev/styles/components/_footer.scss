@@ -1,0 +1,77 @@
+.footer {
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    &::before {
+        content: '';
+        display: block;
+        width: 120%;
+        height: 100%;
+        background-color: $mediumgrey;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform-origin: top right;
+        transform: rotate(-10deg);
+        z-index: -1;
+    }
+    &::after {
+        content: '';
+        display: block;
+        width: 120%;
+        height: 100%;
+        background-color: $darkgrey;
+        position: absolute;
+        top: 10px;
+        right: 0;
+        transform-origin: top right;
+        transform: rotate(-10deg);
+        z-index: -1;
+    }
+    &__container {
+        position: absolute;
+        bottom: 25%;
+        left: 50%;
+        transform: translate(-50%,25%);
+    }
+    &__logo {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        margin-bottom: 50px;
+        &--row {
+            width: 24px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &__name {
+        font-family: 'Unica One', cursive;
+        font-size: 2.4rem;
+        color: $white;
+        line-height: 0.8;
+    }
+    &__social {
+        margin-bottom: 25px;
+    }
+    &__links {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+    &__link {
+        display: block;
+        margin-right: 50px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__icon {
+        font-size: 2.4rem;
+        color: $grey;
+    }
+    &__copy {
+        text-align: center; 
+        color: $lightgrey;
+    }
+}

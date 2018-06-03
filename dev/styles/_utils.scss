@@ -1,0 +1,38 @@
+$red: #f33131;
+$pink: #f3317a;
+$yellow: #f3d600;
+$blue: #1cbbe3;
+$teal: #7cd3ce;
+$green: #acde61;
+$white: #ffffff;
+$darkgrey: #515151;
+$mediumgrey: #626262;
+$grey: #b4b4b4;
+$lightgrey: #ebebeb;
+
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.wrapper {
+    width: 65%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
