@@ -1,7 +1,57 @@
 .work {
+    padding-top: 50px;
+    &__header {
+        margin-bottom: 25px;
+    }
+    &__project {
+        margin-bottom: 75px;
+        // position: relative;
+        // &::before {
+        //     content: '';
+        //     display: block;
+        //     width: 120%;
+        //     height: 100%;
+        //     background-color: $lightgrey;
+        //     position: absolute;
+        //     top: 50%;
+        //     left: 50%;
+        //     transform: translate(-50%,-50%) rotate(-10deg);
+        //     z-index: -2;
+        // }
+        // &::after {
+        //     content: '';
+        //     display: block;
+        //     width: 120%;
+        //     height: 100%;
+        //     background-color: $red;
+        //     position: absolute;
+        //     bottom: 10px;
+        //     left: 0;
+        //     transform-origin: bottom left;
+        //     transform: rotate(-10deg);
+        //     z-index: -2;
+        // }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__title {
+        margin-bottom: 10px;
+    }
     &__preview {
         position: relative;
-        width: 80%;
+        width: 100%;
+        margin-bottom: 35px;
+        &::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: $lightgrey;
+            z-index: -1;
+        }
         &:hover .work__links {
             opacity: 1;
         }
@@ -23,18 +73,40 @@
         align-items: center;
         opacity: 0;
         transition: 0.5s all ease;
-        background-color: rgba($green,0.25);
+        background-color: rgba($red,0.5);
     }
     &__link {
         display: block;
         padding: 10px 15px;
-        font-size: 1.6rem;
-        color: white;
-        background-color: $green;
-        margin-right: 15px;
+        font-size: 1.8rem;
+        color: $white;
+        background-color: $red;
+        margin-right: 25px;
+        position: relative;
+        &:hover {
+            color: $red;
+            background-color: $white;
+        }
+        &::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            background-color: $darkgrey;
+            z-index: -1;
+        }
         &:last-child {
             margin-right: 0;
         }
     }
-
+    &__skills {
+        text-transform: uppercase;
+        color: $darkgrey;
+        margin-bottom: 15px;
+    }
+    &__text {
+        text-align: justify;
+    }
 }

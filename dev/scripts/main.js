@@ -4,6 +4,9 @@ myApp.navBarToggle = () => {
     $(".header__icon").on("click",() => {
         $(".header__nav").toggleClass("header__nav--active")
     });
+    $(".header__icon").on("mouseover", () => {
+        $(".header__nav").toggleClass("header__nav--active")
+    });
 }
 
 myApp.navBarRemove = () => {
@@ -12,11 +15,16 @@ myApp.navBarRemove = () => {
     });
 }
 
+myApp.scroll = () => {
+    $(".header__link-text").smoothScroll();
+}
+
 // INITIALIZE
 
 myApp.init = () => {
     myApp.navBarToggle()
     myApp.navBarRemove()
+    myApp.scroll()
 };
 
 // DOCUMENT READY

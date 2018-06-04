@@ -1,14 +1,27 @@
 .contact {
+    padding-top: 50px;
+    &__header {
+        margin-bottom: 25px;
+    }
     &__container {
         display: flex;
     }
+    &__text-container {
+        width: 40%;
+    }
     &__text {
-        width: 50%;
-        text-align: right;
-        padding-right: 75px;
+        font-size: 1.8rem;
+        line-height: 1.4;
+    }
+    &__icon {
+        margin-right: 10px;
     }
     &__form {
-        width: 50%;
+        width: 60%;
+    }
+    &__label {
+        font-size: 1.8rem;
+        color: $darkgrey;
     }
     &__input {
         width: 100%;
@@ -16,13 +29,33 @@
         border: 0;
         border-bottom: 1.5px solid $darkgrey;
         margin-bottom: 15px;
+        font-size: 1.8rem;
+        height: 40px;
+        background-color: transparent;
     }
     &__message {
+        height: 150px;
+        background-color: transparent;
         resize: none;
     }
     &__submit {
         border: 0;
         padding: 0;
         background-color: transparent;
+        font-size: 1.8rem;
+        color: $darkgrey;
+        position: relative;
+        &:hover {
+            color: $red;     
+        }
+        &:hover::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            border-bottom: 2px solid $red;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
     }
 }

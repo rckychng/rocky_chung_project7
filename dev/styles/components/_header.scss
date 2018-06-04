@@ -20,7 +20,7 @@
         display: block;
         width: 120%;
         height: 100%;
-        background-color: $green;
+        background-color: $red;
         position: absolute;
         bottom: 10px;
         left: 0;
@@ -43,6 +43,7 @@
         font-size: 2.4rem;
         color: $white;
         line-height: 0.8;
+        text-shadow: 2.5px 2.5px $darkgrey;
     }
     &__icon {
         position: fixed;
@@ -51,6 +52,7 @@
         color: $white;
         font-size: 2rem;
         cursor: pointer;
+        text-shadow: 2.5px 2.5px $darkgrey;
     }
     &__nav {
         width: 100%;
@@ -87,7 +89,7 @@
         margin-top: 300px;
     }
     &__title {
-        color: $darkgrey;
+        color: $white;
     }
     &__subtitle {
         color: $darkgrey;
