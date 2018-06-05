@@ -1,7 +1,22 @@
 .work {
-    padding-top: 50px;
+    padding: 50px 0;
     &__header {
-        margin-bottom: 25px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 75px;
+        letter-spacing: 5px;
+        font-weight: 500;
+        position: relative;
+        &::before {
+            content: '';
+            width: 200px;
+            height: 3px;
+            background-color: $lightgrey;
+            position: absolute;
+            bottom: -20%;
+            left: 50%;
+            transform: translateX(-50%) rotate(-5deg);
+        }
     }
     &__project {
         margin-bottom: 75px;
@@ -36,7 +51,12 @@
         }
     }
     &__title {
-        margin-bottom: 10px;
+        margin-bottom: 15px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: $darkgrey;
+        text-align: center;
+        letter-spacing: 2px;
     }
     &__preview {
         position: relative;
@@ -102,9 +122,13 @@
         }
     }
     &__skills {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 400;
         text-transform: uppercase;
+        letter-spacing: 2px;
         color: $darkgrey;
         margin-bottom: 15px;
+        text-align: center;
     }
     &__text {
         text-align: justify;

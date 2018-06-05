@@ -12,7 +12,7 @@
         top: 0;
         right: 0;
         transform-origin: top right;
-        transform: rotate(-10deg);
+        transform: rotate(-5deg);
         z-index: -1;
     }
     &::after {
@@ -25,14 +25,14 @@
         top: 10px;
         right: 0;
         transform-origin: top right;
-        transform: rotate(-10deg);
+        transform: rotate(-5deg);
         z-index: -1;
     }
     &__container {
         position: absolute;
-        bottom: 25%;
+        bottom: 50px;
         left: 50%;
-        transform: translate(-50%,25%);
+        transform: translateX(-50%);
     }
     &__logo {
         display: flex;
