@@ -1,5 +1,5 @@
 .contact {
-    padding-top: 50px;
+    padding: 75px 0 50px;
     &__header {
         text-transform: uppercase;
         text-align: center;
@@ -12,6 +12,7 @@
             width: 200px;
             height: 3px;
             background-color: $lightgrey;
+            border-radius: 1.5px;
             position: absolute;
             bottom: -20%;
             left: 50%;
@@ -20,6 +21,7 @@
     }
     &__container {
         display: flex;
+        flex-direction: row;
     }
     &__text-container {
         width: 40%;
@@ -71,6 +73,35 @@
             position: absolute;
             bottom: 0;
             left: 0;
+        }
+    }
+}
+
+
+// MEDIA QUERY
+
+@media (max-width: 960px) {
+    .contact {
+        &__container {
+            flex-direction: column;
+        }
+        &__text-container {
+            width: 100%;
+            margin-bottom: 25px;
+        }
+        &__form {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .contact {
+        &__header {
+            margin-bottom: 50px;
+            &::before {
+                width: 175px;
+            }
         }
     }
 }

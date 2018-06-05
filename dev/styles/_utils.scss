@@ -40,3 +40,18 @@ img {
     max-width: 1280px;
     margin: 0 auto;
 }
+
+
+// MEDIA QUERY
+
+@media (max-width: 960px) {
+    .wrapper {
+        width: 60%;
+    }
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        width: 70%; 
+    }
+}

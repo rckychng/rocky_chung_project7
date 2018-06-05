@@ -25,11 +25,44 @@ h2 {
 }
 
 h3 {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
 }
 
 p {
     font-size: 1.8rem;
     line-height: 1.6;
     color: $darkgrey;
+}
+
+
+// MEDIA QUERY
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 12rem;
+    }
+    h2 {
+        font-size: 3.2rem;
+    }
+    h3 {
+        font-size: 2.6rem;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 9rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 2.4rem;
+    }
+    p {
+        font-size: 1.4rem;
+    }
 }

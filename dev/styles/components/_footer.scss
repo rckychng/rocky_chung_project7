@@ -1,5 +1,5 @@
 .footer {
-    height: 500px;
+    height: 300px;
     position: relative;
     overflow: hidden;
     &::before {
@@ -78,5 +78,23 @@
     &__copy {
         text-align: center; 
         color: $lightgrey;
+    }
+}
+
+
+// MEDIA QUERY
+
+@media (max-width: 960px) {
+    .footer {
+        height: 250px
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        height: 200px;
+        &__copy {
+            font-size: 1.3rem;
+        }
     }
 }

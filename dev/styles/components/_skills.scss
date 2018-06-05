@@ -1,5 +1,5 @@
 .skills {
-    padding: 50px 0 50px;
+    padding: 75px 0;
     position: relative;
     &::before {
         content: '';
@@ -18,7 +18,7 @@
         display: block;
         width: 120%;
         height: 100%;
-        background-color: $red;
+        background-color: $grey;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -38,6 +38,7 @@
             width: 200px;
             height: 3px;
             background-color: $white;
+            border-radius: 1.5px;
             position: absolute;
             bottom: -20%;
             left: 50%;
@@ -69,5 +70,36 @@
     &__text {
         color: $white;
     }
+}
 
+
+// MEDIA QUERY
+
+@media (max-width: 768px) {
+    .skills {
+        &__skill {
+            width: calc(100% / 3);
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .skills {
+        &__header {
+            margin-bottom: 50px;
+            &::before {
+                width: 175px;
+            }
+        }
+        &__skill {
+            margin-bottom: 15px;
+        }
+        &__icon {
+            font-size: 6rem;
+        }
+        &__image {
+            width: 57px;
+            height: 57px;
+        }
+    }
 }

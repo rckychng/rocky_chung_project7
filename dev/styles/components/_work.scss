@@ -6,12 +6,14 @@
         margin-bottom: 75px;
         letter-spacing: 5px;
         font-weight: 500;
+        color: $white;
         position: relative;
         &::before {
             content: '';
             width: 200px;
             height: 3px;
-            background-color: $lightgrey;
+            background-color: $white;
+            border-radius: 1.5px;
             position: absolute;
             bottom: -20%;
             left: 50%;
@@ -20,43 +22,49 @@
     }
     &__project {
         margin-bottom: 75px;
-        // position: relative;
-        // &::before {
-        //     content: '';
-        //     display: block;
-        //     width: 120%;
-        //     height: 100%;
-        //     background-color: $lightgrey;
-        //     position: absolute;
-        //     top: 50%;
-        //     left: 50%;
-        //     transform: translate(-50%,-50%) rotate(-10deg);
-        //     z-index: -2;
-        // }
-        // &::after {
-        //     content: '';
-        //     display: block;
-        //     width: 120%;
-        //     height: 100%;
-        //     background-color: $red;
-        //     position: absolute;
-        //     bottom: 10px;
-        //     left: 0;
-        //     transform-origin: bottom left;
-        //     transform: rotate(-10deg);
-        //     z-index: -2;
-        // }
+        padding: 25px 0;
+        &--bg {
+            padding: 75px 0;
+            position: relative;
+            &::before {
+                content: '';
+                display: block;
+                width: 120%;
+                height: 100%;
+                background-color: $lightgrey;
+                position: absolute;
+                top: 52%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(-5deg);
+                z-index: -2;
+            }
+            &::after {
+                content: '';
+                display: block;
+                width: 120%;
+                height: 100%;
+                background-color: $grey;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%) rotate(-5deg);
+                z-index: -2;
+            }
+        }
         &:last-child {
             margin-bottom: 0;
         }
     }
     &__title {
         margin-bottom: 15px;
-        font-weight: 500;
+        font-weight: 700;
         text-transform: uppercase;
         color: $darkgrey;
         text-align: center;
         letter-spacing: 2px;
+        &--white {
+            color: $white;
+        }
     }
     &__preview {
         position: relative;
@@ -123,14 +131,43 @@
     }
     &__skills {
         font-family: 'Oswald', sans-serif;
-        font-weight: 400;
+        font-weight: 500;
         text-transform: uppercase;
         letter-spacing: 2px;
         color: $darkgrey;
         margin-bottom: 15px;
         text-align: center;
+        &--white {
+            color: $white;
+        }
     }
     &__text {
         text-align: justify;
+        &--white {
+            color: $white;
+        }
+    }
+}
+
+
+// MEDIA QUERY
+
+@media (max-width: 480px) {
+    .work {
+        &__header {
+            &::before {
+                width: 175px;
+            }
+        }
+        &__preview {
+            margin-bottom: 100px;
+        }
+        &__links {
+            top: auto;
+            transform: translate(-50%,0);
+            bottom: -90%;
+            opacity: 1;
+            background-color: transparent;
+        }
     }
 }

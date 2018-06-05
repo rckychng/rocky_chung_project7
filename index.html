@@ -12,16 +12,6 @@
 <body>
 	<!-- HEADER STARTS -->
 	<header class="header">
-		<!-- <div class="header__logo">
-			<div class="header__logo--row">
-				<p class="header__name">R</p>
-				<p class="header__name">C</p>
-			</div>
-			<div class="header__logo--row">
-				<p class="header__name">K</p>
-				<p class="header__name">Y</p>
-			</div>
-		</div> -->
 		<div class="header__icon">
 			<i class="fas fa-bars"></i>
 		</div>
@@ -80,10 +70,9 @@
 
 		<!-- WORK STARTS -->
 		<section class="work" id="work">
-			<h2 class="work__header">Work</h2>
-			<div class="work__project">
+			<div class="work__project work__project--bg">
+				<h2 class="work__header">Work</h2>
 				<div class="wrapper">
-					<h3 class="work__title">Danny Pack</h3>
 					<div class="work__container">
 						<div class="work__preview">
 							<!-- <img class="work__image" src="assets/work_01.jpg" alt="Danny Pack"> -->
@@ -96,15 +85,15 @@
 							</div>
 						</div>
 						<div class="work__details">
-							<p class="work__skills">HTML // Sass // Javascript // jQuery // Responsive</p>
-							<p class="work__text">A Pokemon inspired game where you play as one of HackerYou's instructors, Danny, and take on wild CSS in order to collect them and add them to Danny's fanny pack. The game was based on an inside joke we had going on during my cohort.</p>
+							<h3 class="work__title work__title--white">Danny Pack</h3>
+							<p class="work__skills work__skills--white">HTML // Sass // Javascript // jQuery // Responsive</p>
+							<p class="work__text work__text--white">A Pokemon inspired game where you play as one of HackerYou's instructors, Danny, and take on wild CSS in order to collect them and add them to Danny's fanny pack. The game was based on an inside joke we had going on during my cohort.</p>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="work__project">
 				<div class="wrapper">
-					<h3 class="work__title">REACT Paint</h3>
 					<div class="work__container">
 						<div class="work__preview">
 							<!-- <img class="work__image" src="assets/work_02.jpg" alt="REACT Paint"> -->
@@ -117,15 +106,15 @@
 							</div>
 						</div>
 						<div class="work__details">
+							<h3 class="work__title">REACT Paint</h3>
 							<p class="work__skills">React // Sass // Firebase // Responsive</p>
 							<p class="work__text">A paint app built in React where users can draw on the canvas, change the colour of the brush and adjust the size of the brush. Users are also able to undo and redo any changes that they have made to the canvas. The app is also integrated with Firebase Realtime Database which allows the user to save their drawings as well as load it back onto the canvas at a later time to continue working on it.</p>
 						</div>
 					</div>	
 				</div>
 			</div>
-			<div class="work__project">
+			<div class="work__project work__project--bg">
 				<div class="wrapper">
-					<h3 class="work__title">Get Lit!</h3>
 					<div class="work__container">
 						<div class="work__preview">
 							<!-- <img class="work__image" src="assets/work_03.jpg" alt="Get Lit!"> -->
@@ -138,26 +127,30 @@
 							</div>
 						</div>
 						<div class="work__details">
-							<p class="work__skills">React // React Router // Sass // API // Firebase // Responsive</p>
-							<p class="work__text">An app that help users decide on what book to read next using the Good Reads API. Users are able to search for books by genre and the results that come back are the most popular books in that specific genre. Firebase Realtime Database and Authentication is also integrated with the app which allows users to login, save their favourite books to the database, delete it and check off if the book is being read or has been read.</p>
+							<h3 class="work__title work__title--white">Get Lit!</h3>
+							<p class="work__skills work__skills--white">React // React Router // Sass // API // Firebase // Responsive</p>
+							<p class="work__text work__text--white">An app that help users decide on what book to read next using the Good Reads API. Users are able to search for books by genre and the results that come back are the most popular books in that specific genre. Firebase Realtime Database and Authentication is also integrated with the app which allows users to login, save their favourite books to the database, delete it and check off if the book is being read or has been read.</p>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="work__project">
 				<div class="wrapper">
-					<h3 class="work__title">Lisbon</h3>
 					<div class="work__container">
 						<div class="work__preview">
-							<img class="work__image" src="assets/work_03.jpg" alt="Get Lit!">
+							<!-- <img class="work__image" src="assets/work_04.jpg" alt="classiFurs"> -->
+							<video width="100%" autoplay loop>
+								<source src="assets/work_04.webm" type="video/webm">
+							</video>
 							<div class="work__links">
-								<a class="work__link" href="https://whattoread-test.firebaseapp.com/" target="_blank">Live</a>
-								<a class="work__link" href="https://github.com/WhatToRead/whatToRead" target="_blank">GitHub</a>
+								<a class="work__link" href="https://learock.github.io/classiFurs/" target="_blank">Live</a>
+								<a class="work__link" href="https://github.com/learock/classiFurs" target="_blank">GitHub</a>
 							</div>
 						</div>
 						<div class="work__details">
-							<p class="work__skills">HTML // Sass // BEM // Responsive // PSD Conversion</p>
-							<p class="work__text">Single page fully responsive PSD conversion based off of client requirements.</p>
+							<h3 class="work__title">classiFurs</h3>
+							<p class="work__skills">HTML // Sass // Javascript // RESTful API // Responsive</p>
+							<p class="work__text">Looking for pets to adopt in your city? classiFurs is an online classifieds website that uses the PetFinder API to search for pets that have been put up for adoption. Users can search for a pet by type, gender, age and location. Clicking on a pet will provide the user with a more detailed look at the pet and their adoption information.</p>
 						</div>
 					</div>
 				</div>
@@ -233,7 +226,7 @@
 							<span class="contact__icon"><i class="far fa-envelope"></i></span>hello@rckychng.com
 						</p>
 					</div>
-					<form action="" class="contact__form">
+					<form action="http://www.focuspocus.io/magic/39091423516281f3b33aa332dfccf9ee" method="POST"  class="contact__form">
 						<label class="contact__label" for="contact__name">Name*</label>
 						<input type="text" class="contact__input contact__name" name="contact__name" id="contact__name" required="true">
 		
@@ -256,16 +249,6 @@
 	<!-- FOOTER STARTS -->
 	<footer class="footer">
 		<div class="footer__container">
-			<!-- <div class="footer__logo">
-				<div class="footer__logo--row">
-					<p class="footer__name">R</p>
-					<p class="footer__name">C</p>
-				</div>
-				<div class="footer__logo--row">
-					<p class="footer__name">K</p>
-					<p class="footer__name">Y</p>
-				</div>
-			</div> -->
 			<div class="footer__social">
 				<ul class="footer__links">
 					<li class="footer__link">
@@ -291,7 +274,6 @@
 
 	<!-- SCRIPTS STARTS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
 	<script src="/public/scripts/main.js"></script>
 	<!-- SCRIPTS ENDS -->
 </body>
