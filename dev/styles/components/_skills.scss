@@ -18,12 +18,31 @@
         display: block;
         width: 120%;
         height: 100%;
-        background-color: $grey;
+        background-color: $white;
+        // background-color: $red;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%) rotate(-5deg);
         z-index: -1;
+    }
+    &--red::after {
+        background-color: $red;
+    }
+    &--pink::after {
+        background-color: $pink;
+    }
+    &--yellow::after {
+        background-color: $yellow;
+    }
+    &--blue::after {
+        background-color: $blue;
+    }
+    &--teal::after {
+        background-color: $teal;
+    }
+    &--green::after {
+        background-color: $green;
     }
     &__header {
         text-transform: uppercase;

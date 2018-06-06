@@ -1,9 +1,9 @@
 .contact {
-    padding: 75px 0 50px;
+    padding: 75px 0 25px;
     &__header {
         text-transform: uppercase;
         text-align: center;
-        margin-bottom: 75px;
+        margin-bottom: 50px;
         letter-spacing: 5px;
         font-weight: 500;
         position: relative;
@@ -21,20 +21,23 @@
     }
     &__container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
     }
     &__text-container {
-        width: 40%;
+        width: 100%;
+        margin-bottom: 25px;
     }
     &__text {
         font-size: 1.8rem;
         line-height: 1.4;
+        text-align: center;
     }
     &__icon {
         margin-right: 10px;
     }
     &__form {
-        width: 60%;
+        width: 75%;
     }
     &__label {
         font-size: 1.8rem;
@@ -63,16 +66,54 @@
         color: $darkgrey;
         position: relative;
         &:hover {
-            color: $red;     
+            color: $white;
+            // color: $red;     
+        }
+        &--red:hover {
+            color: $red;
+        }
+        &--pink:hover {
+            color: $pink;
+        }
+        &--yellow:hover {
+            color: $yellow;
+        }
+        &--blue:hover {
+            color: $blue;
+        }
+        &--teal:hover {
+            color: $teal;
+        }
+        &--green:hover {
+            color: $green;
         }
         &:hover::before {
             content: '';
             width: 100%;
             height: 100%;
-            border-bottom: 2px solid $red;
+            border-bottom: 2px solid $white;
+            // border-bottom: 2px solid $red;
             position: absolute;
             bottom: 0;
             left: 0;
+        }
+        &--red:hover::before {
+            border-bottom: 2px solid $red;
+        }
+        &--pink:hover::before {
+            border-bottom: 2px solid $pink;
+        }
+        &--yellow:hover::before {
+            border-bottom: 2px solid $yellow;
+        }
+        &--blue:hover::before {
+            border-bottom: 2px solid $blue;
+        }
+        &--teal:hover::before {
+            border-bottom: 2px solid $teal;
+        }
+        &--green:hover::before {
+            border-bottom: 2px solid $green;
         }
     }
 }
@@ -82,11 +123,7 @@
 
 @media (max-width: 960px) {
     .contact {
-        &__container {
-            flex-direction: column;
-        }
         &__text-container {
-            width: 100%;
             margin-bottom: 25px;
         }
         &__form {

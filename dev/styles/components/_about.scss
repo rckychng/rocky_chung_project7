@@ -1,5 +1,6 @@
 .about {
-    padding: 50px 0;
+    padding: 75px 0;
+    margin-bottom: 75px;
     &__header {
         text-transform: uppercase;
         text-align: center;
@@ -22,9 +23,10 @@
     &__container {
         display: flex;
         flex-direction: row;
+        align-items: center;
     }
     &__image-container {
-        width: 50%;
+        width: 40%;
         height: 400px;
         position: relative;
         &::before {
@@ -45,11 +47,14 @@
         object-position: top;
     }
     &__description {
-        width: 50%;
+        width: 60%;
         padding-left: 75px;
     }
     &__text {
         margin-bottom: 50px;
+    }
+    &__paragraph {
+        text-align: justify;
     }
     &__links {
         display: flex;
@@ -67,8 +72,27 @@
         color: $darkgrey;
         transition: 0.25s all ease;
         &:hover {
-            color: $red;
+            color: $white;
+            // color: $red;
             transform: scale(1.5);
+        }
+        &--red:hover {
+            color: $red;
+        }
+        &--pink:hover {
+            color: $pink;
+        }
+        &--yellow:hover {
+            color: $yellow;
+        }
+        &--blue:hover {
+            color: $blue;
+        }
+        &--teal:hover {
+            color: $teal;
+        }
+        &--green:hover {
+            color: $green;
         }
     }
 }

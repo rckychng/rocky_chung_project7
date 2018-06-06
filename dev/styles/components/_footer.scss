@@ -71,8 +71,27 @@
         color: $grey;
         transition: 0.25s all ease;
         &:hover {
-            color: $red;
+            color: $white;
+            // color: $red;
             transform: scale(1.5);
+        }
+        &--red:hover {
+            color: $red;
+        }
+        &--pink:hover {
+            color: $pink;
+        }
+        &--yellow:hover {
+            color: $yellow;
+        }
+        &--blue:hover {
+            color: $blue;
+        }
+        &--teal:hover {
+            color: $teal;
+        }
+        &--green:hover {
+            color: $green;
         }
     }
     &__copy {

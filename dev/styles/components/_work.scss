@@ -1,5 +1,5 @@
 .work {
-    padding: 50px 0;
+    padding-bottom: 50px;
     &__header {
         text-transform: uppercase;
         text-align: center;
@@ -101,18 +101,81 @@
         align-items: center;
         opacity: 0;
         transition: 0.5s all ease;
-        background-color: rgba($red,0.5);
+        // background-color: rgba($red,0.5);
+        &--red {
+            background-color: rgba($red,0.5);
+        }
+        &--pink {
+            background-color: rgba($pink,0.5);
+        }
+        &--yellow {
+            background-color: rgba($yellow,0.5);
+        }
+        &--blue {
+            background-color: rgba($blue,0.5);
+        }
+        &--teal {
+            background-color: rgba($teal,0.5);
+        }
+        &--green {
+            background-color: rgba($green,0.5);
+        }
     }
+
     &__link {
         display: block;
         padding: 10px 15px;
         font-size: 1.8rem;
         color: $white;
-        background-color: $red;
+        background-color: $white;
+        // background-color: $red;
         margin-right: 25px;
         position: relative;
         &:hover {
+            color: $white;
+            // color: $red;
+            background-color: $white;
+        }
+        &--red {
+            background-color: $red;
+        }
+        &--pink {
+            background-color: $pink;
+        }
+        &--yellow {
+            background-color: $yellow;
+        }
+        &--blue {
+            background-color: $blue;
+        }
+        &--teal {
+            background-color: $teal;
+        }
+        &--green {
+            background-color: $green;
+        }
+        &--red:hover {
             color: $red;
+            background-color: $white;
+        }
+        &--pink:hover {
+            color: $pink;
+            background-color: $white;
+        }
+        &--yellow:hover {
+            color: $yellow;
+            background-color: $white;
+        }
+        &--blue:hover {
+            color: $blue;
+            background-color: $white;
+        }
+        &--teal:hover {
+            color: $teal;
+            background-color: $white;
+        }
+        &--green:hover {
+            color: $green;
             background-color: $white;
         }
         &::before {
@@ -145,6 +208,14 @@
         text-align: justify;
         &--white {
             color: $white;
+        }
+    }
+    &__group {
+        color: $darkgrey;
+        font-style: italic;
+        &--white {
+            color: $white;
+            font-style: italic;
         }
     }
 }
