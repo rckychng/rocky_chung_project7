@@ -13,11 +13,20 @@ myApp.navBarRemove = () => {
 }
 
 myApp.loadRandomColor = () => {
+    const $resumeRed = $('<a class="about__pdf" href="assets/rockychung--red.pdf" target="_blank">Resume</a>');
+    const $resumePink = $('<a class="about__pdf" href="assets/rockychung--pink.pdf" target="_blank">Resume</a>');
+    const $resumeYellow = $('<a class="about__pdf" href="assets/rockychung--yellow.pdf" target="_blank">Resume</a>');
+    const $resumeBlue = $('<a class="about__pdf" href="assets/rockychung--blue.pdf" target="_blank">Resume</a>');
+    const $resumeTeal = $('<a class="about__pdf" href="assets/rockychung--teal.pdf" target="_blank">Resume</a>');
+    const $resumeGreen = $('<a class="about__pdf" href="assets/rockychung--green.pdf" target="_blank">Resume</a>');
+
     const randomColor = Math.floor(Math.random() * 6);
     // console.log(randomColor);
     if (randomColor === 5) {
         $('.header').addClass('header--red');
         $('.header__link-text').addClass('header__link-text--red');
+        $('#about__resume').append($resumeRed);
+        $('.about__pdf').addClass('about__pdf--red');
         $('.about__icon').addClass('about__icon--red');
         $('.work__links').addClass('work__links--red');
         $('.work__link').addClass('work__link--red');
@@ -27,6 +36,8 @@ myApp.loadRandomColor = () => {
     } else if (randomColor === 4) {
         $('.header').addClass('header--pink');
         $('.header__link-text').addClass('header__link-text--pink');
+        $('#about__resume').append($resumePink);
+        $('.about__pdf').addClass('about__pdf--pink');
         $('.about__icon').addClass('about__icon--pink');
         $('.work__links').addClass('work__links--pink');
         $('.work__link').addClass('work__link--pink');
@@ -36,6 +47,8 @@ myApp.loadRandomColor = () => {
     } else if (randomColor === 3) {
         $('.header').addClass('header--yellow');
         $('.header__link-text').addClass('header__link-text--yellow');
+        $('#about__resume').append($resumeYellow);
+        $('.about__pdf').addClass('about__pdf--yellow');
         $('.about__icon').addClass('about__icon--yellow');
         $('.work__links').addClass('work__links--yellow');
         $('.work__link').addClass('work__link--yellow');
@@ -45,6 +58,8 @@ myApp.loadRandomColor = () => {
     } else if (randomColor === 2) {
         $('.header').addClass('header--blue');
         $('.header__link-text').addClass('header__link-text--blue');
+        $('#about__resume').append($resumeBlue);
+        $('.about__pdf').addClass('about__pdf--blue');
         $('.about__icon').addClass('about__icon--blue');
         $('.work__links').addClass('work__links--blue');
         $('.work__link').addClass('work__link--blue');
@@ -54,6 +69,8 @@ myApp.loadRandomColor = () => {
     } else if (randomColor === 1) {
         $('.header').addClass('header--teal');
         $('.header__link-text').addClass('header__link-text--teal');
+        $('#about__resume').append($resumeTeal);
+        $('.about__pdf').addClass('about__pdf--teal');
         $('.about__icon').addClass('about__icon--teal');
         $('.work__links').addClass('work__links--teal');
         $('.work__link').addClass('work__link--teal');
@@ -63,6 +80,8 @@ myApp.loadRandomColor = () => {
     } else {
         $('.header').addClass('header--green');
         $('.header__link-text').addClass('header__link-text--green');
+        $('#about__resume').append($resumeGreen);
+        $('.about__pdf').addClass('about__pdf--green');
         $('.about__icon').addClass('about__icon--green');
         $('.work__links').addClass('work__links--green');
         $('.work__link').addClass('work__link--green');
