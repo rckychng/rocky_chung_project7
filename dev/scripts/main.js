@@ -23,9 +23,9 @@ myApp.loadRandomColor = () => {
     const randomColor = Math.floor(Math.random() * 6);
     // console.log(randomColor);
     if (randomColor === 5) {
+        $('#about__resume').append($resumeRed);
         $('.header').addClass('header--red');
         $('.header__link-text').addClass('header__link-text--red');
-        $('#about__resume').append($resumeRed);
         $('.about__pdf').addClass('about__pdf--red');
         $('.about__icon').addClass('about__icon--red');
         $('.work__links').addClass('work__links--red');
@@ -34,9 +34,9 @@ myApp.loadRandomColor = () => {
         $('.contact__submit').addClass('contact__submit--red');
         $('.footer__icon').addClass('footer__icon--red');
     } else if (randomColor === 4) {
+        $('#about__resume').append($resumePink);
         $('.header').addClass('header--pink');
         $('.header__link-text').addClass('header__link-text--pink');
-        $('#about__resume').append($resumePink);
         $('.about__pdf').addClass('about__pdf--pink');
         $('.about__icon').addClass('about__icon--pink');
         $('.work__links').addClass('work__links--pink');
@@ -45,9 +45,9 @@ myApp.loadRandomColor = () => {
         $('.contact__submit').addClass('contact__submit--pink');
         $('.footer__icon').addClass('footer__icon--pink');
     } else if (randomColor === 3) {
+        $('#about__resume').append($resumeYellow);
         $('.header').addClass('header--yellow');
         $('.header__link-text').addClass('header__link-text--yellow');
-        $('#about__resume').append($resumeYellow);
         $('.about__pdf').addClass('about__pdf--yellow');
         $('.about__icon').addClass('about__icon--yellow');
         $('.work__links').addClass('work__links--yellow');
@@ -56,9 +56,9 @@ myApp.loadRandomColor = () => {
         $('.contact__submit').addClass('contact__submit--yellow');
         $('.footer__icon').addClass('footer__icon--yellow');
     } else if (randomColor === 2) {
+        $('#about__resume').append($resumeBlue);
         $('.header').addClass('header--blue');
         $('.header__link-text').addClass('header__link-text--blue');
-        $('#about__resume').append($resumeBlue);
         $('.about__pdf').addClass('about__pdf--blue');
         $('.about__icon').addClass('about__icon--blue');
         $('.work__links').addClass('work__links--blue');
@@ -67,9 +67,9 @@ myApp.loadRandomColor = () => {
         $('.contact__submit').addClass('contact__submit--blue');
         $('.footer__icon').addClass('footer__icon--blue');
     } else if (randomColor === 1) {
+        $('#about__resume').append($resumeTeal);
         $('.header').addClass('header--teal');
         $('.header__link-text').addClass('header__link-text--teal');
-        $('#about__resume').append($resumeTeal);
         $('.about__pdf').addClass('about__pdf--teal');
         $('.about__icon').addClass('about__icon--teal');
         $('.work__links').addClass('work__links--teal');
@@ -78,9 +78,9 @@ myApp.loadRandomColor = () => {
         $('.contact__submit').addClass('contact__submit--teal');
         $('.footer__icon').addClass('footer__icon--teal');
     } else {
+        $('#about__resume').append($resumeGreen);
         $('.header').addClass('header--green');
         $('.header__link-text').addClass('header__link-text--green');
-        $('#about__resume').append($resumeGreen);
         $('.about__pdf').addClass('about__pdf--green');
         $('.about__icon').addClass('about__icon--green');
         $('.work__links').addClass('work__links--green');
