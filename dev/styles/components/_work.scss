@@ -213,9 +213,27 @@
     &__group {
         color: $darkgrey;
         font-style: italic;
+        position: relative;
+        &:hover::before {
+            content: '';
+            width: 100%;
+            border-bottom: 2px solid $darkgrey;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
         &--white {
             color: $white;
             font-style: italic;
+            position: relative;
+            &:hover::before {
+                content: '';
+                width: 100%;
+                border-bottom: 2px solid $white;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
         }
     }
 }
