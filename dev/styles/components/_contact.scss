@@ -33,6 +33,60 @@
         line-height: 1.4;
         text-align: center;
     }
+    &__link {
+        color: $darkgrey;
+        position: relative;
+        &:hover {
+            color: $white;
+            // color: $red;     
+        }
+        &--red:hover {
+            color: $red;
+        }
+        &--pink:hover {
+            color: $pink;
+        }
+        &--yellow:hover {
+            color: $yellow;
+        }
+        &--blue:hover {
+            color: $blue;
+        }
+        &--teal:hover {
+            color: $teal;
+        }
+        &--green:hover {
+            color: $green;
+        }
+        &:hover::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            border-bottom: 2px solid $white;
+            // border-bottom: 2px solid $red;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        &--red:hover::before {
+            border-bottom: 2px solid $red;
+        }
+        &--pink:hover::before {
+            border-bottom: 2px solid $pink;
+        }
+        &--yellow:hover::before {
+            border-bottom: 2px solid $yellow;
+        }
+        &--blue:hover::before {
+            border-bottom: 2px solid $blue;
+        }
+        &--teal:hover::before {
+            border-bottom: 2px solid $teal;
+        }
+        &--green:hover::before {
+            border-bottom: 2px solid $green;
+        }
+    }
     &__icon {
         margin-right: 10px;
     }
